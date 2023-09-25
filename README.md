@@ -18,7 +18,7 @@ Add your answers to this markdown file.
 Asymptotic analysis can be misleading in practice
 - The way you derive a recursive relation to get asymptotic complexity can vary widely in performance times even if asymptotically they are the same. say $1000n^2+n+3$ is your relation, compared to $2n^2+1$. asymptotically, they are the exact same however, $2n^2+1$ is faster by multiple orders of magnitude in practice
 - asymptotic analysis only takes into account that the size of an input is the only thing that matters in runtime. So anything hardware related that could potentially change expected runtime is not accounted for
-- Asymptotic analysis does not take into account how the algorithm is actually implemented. Even if the asymptotic analysis is great, the actual algorithm you are using could be ineffective when compared to other options for the task you are trying to make it do and will result in slower runtimes. Take insertion sort and quicksort, quicksort on average is better then insertion sort but for smaller amounts of data, insertion sort is faster even though asynptotically its worse.
+- The programming language that you used to implement the algorithm can change the runtime.
 
 Assuming it took 5 seconds to go through a binary search tree with 1000 elements, it would take about 6.6 seconds for 10000 elements as a binary search tree has an average case of $\Theta(log(n))$
 
