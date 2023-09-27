@@ -18,7 +18,7 @@ Add your answers to this markdown file.
 Asymptotic analysis can be misleading in practice
 - The way you derive a recursive relation to get asymptotic complexity can vary widely in performance times even if asymptotically they are the same. say $1000n^2+n+3$ is your relation, compared to $2n^2+1$. asymptotically, they are the exact same however, $2n^2+1$ is faster by multiple orders of magnitude in practice
 - asymptotic analysis only takes into account that the size of an input is the only thing that matters in runtime. So anything hardware related that could potentially change expected runtime is not accounted for
-- The programming language that you used to implement the algorithm can change the runtime.
+- The programming language that you used to implement the algorithm can change the runtime. This is because of how the program is compiled. The amount of extra built in features and extra overhead of the language can slow down runtimes. In c++, you have to manually declare types, array sizes, pointers, memory allocation, ect. While in python, everything is essentially automatically done for you.
 
 Assuming it took 5 seconds to go through a binary search tree with 1000 elements, it would take about 6.6 seconds for 10000 elements as a binary search tree has an average case of $\Theta(log(n))$
 
